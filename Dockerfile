@@ -17,8 +17,8 @@ ENV NODE_ENV=production
 # This is useful for configuring the application to run in a production environment, where certain optimizations 
 # and behaviors may differ from a development environment.
 
-COPY package.json ./
-# COPY package.json ./ -> This command copies the "package.json" file from the current directory on the host machine 
+COPY package*.json ./
+# COPY package*.json ./ -> This command copies both "package.json" and "package-lock.json" 
 # (where the Dockerfile is located) into the current working directory ("/app") inside the Docker container. 
 # The "package.json" file is essential for Node.js applications as it contains metadata about the project, 
 # including its dependencies and scripts. By copying this file first, you can run "npm install" to install 
