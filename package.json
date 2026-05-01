@@ -1,0 +1,12 @@
+{
+  "name": "hello-express-js",
+  "version": "1.0.0",
+  "description": "Simple Express.js application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
